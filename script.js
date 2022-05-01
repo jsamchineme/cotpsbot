@@ -51,7 +51,7 @@ async function run() {
       await delay(7);
       await grabOffers();
     } catch(e) {
-      // await driver.quit();
+      await driver.quit();
     }
   }
 
