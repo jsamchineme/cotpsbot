@@ -150,8 +150,8 @@ async function run() {
 
       await delay(2);
       // close system notification modal
-      // const confirmButton = await getElem('.uni-modal__btn');
-      // confirmButton.click();
+      const confirmButton = await getElem('.uni-modal__btn');
+      await confirmButton.click();
     } catch(e) {
       await submitLogin();
     }
